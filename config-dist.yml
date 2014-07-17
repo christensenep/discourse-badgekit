@@ -1,0 +1,16 @@
+defaults: &defaults
+  api:
+    host: 10.0.2.2
+    port: 8080
+    key: master
+    secret: somesortofsecret
+    system: badgekit
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
